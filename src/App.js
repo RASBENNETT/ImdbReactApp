@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import FilmList from "./containers/FilmList"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+    const list_container = {
+      display: "flex",
+      justifyContent: "space-around",
+      flexWrap: "wrap",
+      width: "80vw",
+      margin: "auto"
+    }
+    return (
+      <FilmList style={list_container}/>
+    )
 }
+  
+
 
 export default App;
